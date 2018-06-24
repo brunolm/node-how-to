@@ -20,3 +20,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 - [Starting an Express server](https://github.com/brunolm/node-how-to/pull/1)
 - [Add api routes](https://github.com/brunolm/node-how-to/pull/2)
 - [Create async route that consumes a service](https://github.com/brunolm/node-how-to/pull/3)
+
+### Middlewares
+
+- [morgan, routing logger](https://github.com/brunolm/node-how-to/commit/c951c0e4b509e4385041f6c68a3abade8d8300df)
