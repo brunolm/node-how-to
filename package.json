@@ -6,10 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,scss,md,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^10.3.5"
+    "@types/node": "^10.3.5",
+    "husky": "^1.0.0-rc.9",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.5"
   }
 }
