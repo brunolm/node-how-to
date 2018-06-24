@@ -5,6 +5,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## New project
 
 - [Init Node and TypeScript](https://github.com/brunolm/node-how-to/commit/de80ea5dab8af6d6e431300c4bc65ce4a8193bcd)
+- [Add nodemon (auto restart server after changes)](https://github.com/brunolm/node-how-to/commit/155963001e3001e5e570bdf8f189a28f865c5b28)
 - [Add gitignore](https://github.com/brunolm/node-how-to/commit/6bd26e824c8ab644f189a3ba28fe07a2d18c4cc1)
 
 ### Formatting and Linting
