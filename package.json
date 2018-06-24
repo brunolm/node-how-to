@@ -17,6 +17,12 @@
       "git add"
     ]
   },
+  "keywords": ["node", "typescript", "explanation"],
+  "author": {
+    "email": "brunolm7@gmail.com",
+    "name": "Bruno Leonardo Michels",
+    "url": "http://codingwise.com/"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^10.3.5",
