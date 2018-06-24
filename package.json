@@ -2,8 +2,9 @@
   "name": "node-how-to",
   "version": "1.0.0",
   "description": "Each Pull Request will contain explanation and steps taken to complete a feature",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
@@ -17,17 +18,27 @@
       "git add"
     ]
   },
-  "keywords": ["node", "typescript", "explanation"],
+  "keywords": [
+    "node",
+    "typescript",
+    "explanation"
+  ],
   "author": {
     "email": "brunolm7@gmail.com",
     "name": "Bruno Leonardo Michels",
     "url": "http://codingwise.com/"
   },
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@types/express": "^4.16.0",
     "@types/node": "^10.3.5",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
     "husky": "^1.0.0-rc.9",
     "lint-staged": "^7.2.0",
-    "prettier": "^1.13.5"
+    "prettier": "^1.13.5",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
   }
 }
