@@ -8,6 +8,10 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 - [Add nodemon (auto restart server after changes)](https://github.com/brunolm/node-how-to/commit/155963001e3001e5e570bdf8f189a28f865c5b28)
 - [Add gitignore](https://github.com/brunolm/node-how-to/commit/6bd26e824c8ab644f189a3ba28fe07a2d18c4cc1)
 
+## Docker
+
+- [Add docker-compose file](https://github.com/brunolm/node-how-to/commit/62e2717b230b01abbd42ad5117a11194baef81f3)
+
 ### Formatting and Linting
 
 - [Add tslint](https://github.com/brunolm/node-how-to/commit/08acf91a16f79ae8806c8d0e73b49a6d3a68da17)
