@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  api:
+    image: node:10.5.0
+    command: npm run start-dev
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV="development"
