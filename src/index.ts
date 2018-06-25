@@ -1,6 +1,6 @@
+import * as bodyParser from 'body-parser';
 import * as express from 'express';
 import * as morgan from 'morgan';
-import * as bodyParser from 'body-parser';
 
 import * as api from './api';
 
@@ -20,5 +20,6 @@ app.use('/api', api);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
+  // tslint:disable-next-line:no-console
   console.info(`server started at port ${port}`);
 });

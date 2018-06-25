@@ -14,13 +14,13 @@ abstract class BaseModel extends Model {
 
   public createdAt: string;
   public updatedAt: string;
-  public deleted_at: number;
+  public deletedAt: number;
 
-  $beforeInsert() {
+  public $beforeInsert() {
     this.createdAt = new Date().toISOString();
   }
 
-  $beforeUpdate() {
+  public $beforeUpdate() {
     this.updatedAt = new Date().toISOString();
   }
 }

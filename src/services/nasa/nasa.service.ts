@@ -1,5 +1,6 @@
-import config from '../../config';
 import axios, { AxiosInstance } from 'axios';
+
+import config from '../../config';
 
 export class NasaService {
   private api: AxiosInstance;
