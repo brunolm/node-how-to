@@ -8,6 +8,10 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 - [Add nodemon (auto restart server after changes)](https://github.com/brunolm/node-how-to/commit/155963001e3001e5e570bdf8f189a28f865c5b28)
 - [Add gitignore](https://github.com/brunolm/node-how-to/commit/6bd26e824c8ab644f189a3ba28fe07a2d18c4cc1)
 
+### Clusters
+
+- [Add clusters to start express server](https://github.com/brunolm/node-how-to/commit/79215c1a7d6f4266bb25895554c07aa1c6a910a5)
+
 ## Unit tests
 
 - [Add unit tests and code coverage](https://github.com/brunolm/node-how-to/pull/6)
