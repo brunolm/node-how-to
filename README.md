@@ -16,6 +16,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ### Formatting and Linting
 
 - [Add tslint](https://github.com/brunolm/node-how-to/commit/08acf91a16f79ae8806c8d0e73b49a6d3a68da17)
+  - [Fixing tslint config and errors](https://github.com/brunolm/node-how-to/commit/ff0044f0336b3f280d533af16669701a169825f8)
 - [Add editorconfig](https://github.com/brunolm/node-how-to/commit/cedc282ac60e18cd7b9ea05420b1396af68999cf)
 - [Add prettierrc](https://github.com/brunolm/node-how-to/commit/d5bf5d78cdd24c9b043df6383018a2b40522f36e)
   - [Run prettier before commit](https://github.com/brunolm/node-how-to/commit/6068c673d24644cf9073d2a61e874c968b3d48eb)
