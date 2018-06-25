@@ -9,5 +9,30 @@ services:
       - ./:/usr/src/app
     ports:
       - 3000:3000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/_ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    depends_on:
+      - db
     environment:
       - NODE_ENV="development"
+  db:
+    image: postgres:10.3
+    ports:
+      - 5432:5432
+    command: postgres -D /run/pgsql-10.3-data -F -c logging_collector=on
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+      PGDATA: /run/pgsql-10.3-data
+      LOGGING_COLLECTOR: 'on'
