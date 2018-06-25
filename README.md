@@ -11,7 +11,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Docker
 
 - [Add docker-compose file](https://github.com/brunolm/node-how-to/commit/62e2717b230b01abbd42ad5117a11194baef81f3)
-- [Add database and health checks](https://github.com/brunolm/node-how-to/commit/a2869a8e5312061a1b9ff86596c153bfef0a5e55)
+- [Add database and health checks](https://github.com/brunolm/node-how-to/commit/927b4fba3526e5dd56d81b7c4999f999c4152db5)
 
 ### Formatting and Linting
 
