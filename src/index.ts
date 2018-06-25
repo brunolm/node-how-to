@@ -1,25 +1,43 @@
 import * as bodyParser from 'body-parser';
+import * as cluster from 'cluster';
 import * as express from 'express';
 import * as morgan from 'morgan';
+import * as os from 'os';
 
 import * as api from './api';
 
-const app = express();
+const cores = os.cpus().length;
 
-app.use('/_ping', (_, res) => {
-  res.send({ ok: true });
-});
+if (cluster.isMaster) {
+  for (let i = 0; i < cores; i++) {
+    cluster.fork();
+  }
 
-if (process.env.NODE_ENV !== 'production') {
-  app.use(morgan('tiny'));
-}
+  cluster.on('exit', (worker, code, signal) => {
+    // tslint:disable-next-line:no-console
+    console.info(`exit #${worker.process.pid} - code: ${code} signal: ${signal}`);
+  });
+} else {
+  const app = express();
 
-app.use(bodyParser.json());
+  app.use('/_ping', (_, res) => {
+    res.send({ ok: true });
+  });
 
-app.use('/api', api);
+  if (process.env.NODE_ENV !== 'production') {
+    app.use(morgan('tiny'));
+  }
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
+  app.use(bodyParser.json());
+
+  app.use('/api', api);
+
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    // tslint:disable-next-line:no-console
+    console.info(`server started at port ${port}`);
+  });
+
   // tslint:disable-next-line:no-console
-  console.info(`server started at port ${port}`);
-});
+  console.info(`Worker ${process.pid} started`);
+}
