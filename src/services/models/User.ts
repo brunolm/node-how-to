@@ -1,6 +1,6 @@
 import BaseModel from './basemodel';
 
-export class Users extends BaseModel {
+export class User extends BaseModel {
   static get tableName() {
     return 'users';
   }

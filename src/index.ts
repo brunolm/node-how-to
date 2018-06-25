@@ -1,5 +1,6 @@
 import * as express from 'express';
 import * as morgan from 'morgan';
+import * as bodyParser from 'body-parser';
 
 import * as api from './api';
 
@@ -12,6 +13,8 @@ app.use('/_ping', (_, res) => {
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('tiny'));
 }
+
+app.use(bodyParser.json());
 
 app.use('/api', api);
 
