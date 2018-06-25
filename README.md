@@ -29,3 +29,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ### Middlewares
 
 - [morgan, routing logger](https://github.com/brunolm/node-how-to/commit/c951c0e4b509e4385041f6c68a3abade8d8300df)
+
+## Database
+
+- [Adding database, knex, objection](https://github.com/brunolm/node-how-to/pull/4)
