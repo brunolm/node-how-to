@@ -3,7 +3,7 @@ version: "3"
 services:
   api:
     image: node:10.5.0
-    command: npm run start-dev
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 1; done; npm run start-dev'
     working_dir: /usr/src/app
     volumes:
       - ./:/usr/src/app
