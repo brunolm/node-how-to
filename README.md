@@ -19,6 +19,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Docker
 
 - [Add docker-compose file](https://github.com/brunolm/node-how-to/commit/62e2717b230b01abbd42ad5117a11194baef81f3)
+  - [Make API wait for db to be up](https://github.com/brunolm/node-how-to/commit/94b9af42ffd78f0db7219187833e9a12d6f1c65b)
 - [Add database and health checks](https://github.com/brunolm/node-how-to/commit/927b4fba3526e5dd56d81b7c4999f999c4152db5)
 
 ### Formatting and Linting
