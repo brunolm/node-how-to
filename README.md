@@ -43,3 +43,4 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Database
 
 - [Adding database, knex, objection](https://github.com/brunolm/node-how-to/pull/4)
+- [Add table with FK and queries](https://github.com/brunolm/node-how-to/commit/b61d0a363a9c5e3ee33d254824e8cff0971b0518)
