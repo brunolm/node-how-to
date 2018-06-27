@@ -20,6 +20,12 @@ export class UserService {
       .where('id', id)
       .delete();
   }
+
+  public async getItems(id: number) {
+    const user = await this.get(id);
+
+    return await user.$loadRelated('userItems');
+  }
 }
 
 export default new UserService();

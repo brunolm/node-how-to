@@ -21,6 +21,13 @@ router.delete(
 );
 
 router.get(
+  '/:id/items',
+  asyncHandler(async (req, res) => {
+    res.send(await userService.getItems(+req.params.id));
+  }),
+);
+
+router.get(
   '/:id',
   asyncHandler(async (req, res) => {
     res.send(await userService.get(+req.params.id));
